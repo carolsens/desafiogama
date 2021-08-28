@@ -1,0 +1,135 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de cadastro",
+        "description": "Esta API tem como objetivo o cadastro de pessoas",
+        "contact": {
+            "email": "carolsens@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3000",
+            "description": "API de teste"
+        }
+    ],
+    "paths": {
+        "/register": {
+            "post": {
+                "description": "cadastro de pessoa",
+                "summary": "cadastro de pessoa",
+                "tags": ["cadastro"],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "cargoPretendido": {
+                                        "type": "string" 
+                                    },
+                                    "profissao": {
+                                        "type": "string" 
+                                    },
+                                    "nomeCompleto": {
+                                        "type": "string" 
+                                    },
+                                    "dataNascimento": {
+                                        "type": "string" 
+                                    },
+                                    "sexo": {
+                                        "type": "string" 
+                                    },
+                                    "estadoCivil": {
+                                        "type": "string" 
+                                    },     
+                                    "identidade": {
+                                        "type": "string" 
+                                    },
+                                    "cpf": {
+                                        "type": "string" 
+                                    },
+                                    "veiculo": {
+                                        "type": "string" 
+                                    },
+                                    "habilitacao": {
+                                        "type": "string" 
+                                    },
+                                    "telefoneFixo1": {
+                                        "type": "string" 
+                                    },
+                                    "telefoneFixo2": {
+                                        "type": "string" 
+                                    },
+                                    "celular": {
+                                        "type": "string" 
+                                    },
+                                    "contato": {
+                                        "type": "string" 
+                                    },
+                                    "email": {
+                                        "type": "string" 
+                                    },
+                                    "cep": {
+                                        "type": "string" 
+                                    },
+                                    "logradouro": {
+                                        "type": "string" 
+                                    },
+                                    "numerocasa": {
+                                        "type": "string" 
+                                    },
+                                    "complemento": {
+                                        "type": "string" 
+                                    },
+                                    "bairro": {
+                                        "type": "string" 
+                                    },
+                                    "cidade": {
+                                        "type": "string" 
+                                    },
+                                    "estado": {
+                                        "type": "string" 
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "candidato_exemplo": {
+                                    "value": {
+                                        "cargoPretendido": "Engenheira Química",
+                                        "profissao": "Analista de desenvolvimento",
+                                        "nomeCompleto": "Carolina Sens",
+                                        "dataNascimento": "00/00/0000",
+                                        "sexo": "Feminino",
+                                        "estadoCivil": "casado",     
+                                        "identidade": "0.000.000",
+                                        "cpf": "000.000.000-00",
+                                        "veiculo": "sim",
+                                        "habilitacao": "sim",
+                                        "telefoneFixo1": "0000-0000",
+                                        "telefoneFixo2": "0000-0000",
+                                        "celular": "00000-0000",
+                                        "contato": "Felipe",
+                                        "email": "carolsens@gmail.com",
+                                        "cep": "89140-000",
+                                        "logradouro": "Rua 11 de março",
+                                        "numerocasa": "xx",
+                                        "complemento": "Casa",
+                                        "bairro": "Centro",
+                                        "cidade": "Ibirama",
+                                        "estado": "SC"
+                                    }
+                                }
+                            }
+                        }
+                    }
+               }
+            }       
+        }
+    }
+}
+
+
+
+
+
