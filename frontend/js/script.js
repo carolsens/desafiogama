@@ -78,7 +78,7 @@ function cadastrarCandidato(event) {
     const plainFormData = Object.fromEntries(formData.entries());
 	const formDataJsonString = JSON.stringify(plainFormData);
 
-    fetch('http://localhost:3000/register', {
+    fetch('https://desafiogamabackend.herokuapp.com/register', {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
